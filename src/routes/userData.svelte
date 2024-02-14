@@ -13,9 +13,14 @@
     Password: <span class="fs-4 fw-bold p-0 text-primary">{data.password1}</span
     >
   </p>
-  <p class="fs-4 fw-bold p-0">
-    Confirm Password: <span class="fs-4 fw-bold p-0 text-primary"
-      >{data.password2}</span
-    >
-  </p>
+  {#if data.password2 === undefined}
+    <p class="fs-2 fw-bold p-0 text-success text-center">Sing In</p>
+  {:else}
+    <p class="fs-4 fw-bold p-0">
+      Confirm Password: <span class="fs-4 fw-bold p-0 text-primary"
+        >{data.password2}</span
+      >
+    </p>
+    <p class="fs-2 fw-bold p-0 text-success text-center">Sing Up</p>
+  {/if}
 </div>
