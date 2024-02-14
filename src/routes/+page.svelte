@@ -158,7 +158,11 @@
         <button
           type="submit"
           id="submitBtn"
-          class="btn btn-primary rounded-5 my-5"
+          class="btn btn-primary rounded-5 my-5 {emailErrorMessage !== '' ||
+          password1ErrorMessage !== '' ||
+          password2ErrorMessage !== ''
+            ? 'disabled'
+            : ' '}"
         >
           {btnText}
         </button>
