@@ -10,7 +10,7 @@ const config = {
     paths: {
       base:
         process.env.NODE_ENV === "production"
-          ? "https://vladbieliaiev.github.io/CDP_Form_Svlete/"
+          ? "https://vladbieliaiev.github.io/CDP_Form_Svlete"
           : "",
     },
   },
