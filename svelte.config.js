@@ -8,7 +8,10 @@ const config = {
     // See https://kit.svelte.dev/docs/adapters for more information about adapters.
     adapter: adapter(),
     paths: {
-      base: process.env.NODE_ENV === "production" ? "/CDP_Form_Svlete" : "",
+      base:
+        process.env.NODE_ENV === "production"
+          ? "https://vladbieliaiev.github.io/CDP_Form_Svlete/"
+          : "",
     },
   },
 };
